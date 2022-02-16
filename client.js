@@ -12,6 +12,15 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Connected")
     conn.write("Name: FW")
+  //   conn.write("Move: up")
+  //  setInterval(() => {
+  //   conn.write("Move: up")
+  //  }, 200) 
+  //   conn.write("Move: up")
+  //   setTimeout(() => {
+  //     conn.write("Move: right")
+  //   }, 500)
+    
   })
 
   conn.on("data", (data) => {
